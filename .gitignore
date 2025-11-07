@@ -1,0 +1,24 @@
+# OS/Editor
+.DS_Store
+Thumbs.db
+
+# PHP / Composer
+/vendor/
+/composer.phar
+
+# App generated artifacts
+/export_pdf/
+/export_cloud/
+/img/photo_gallery/
+/backup_db/
+
+# Credentials / sensitive configs
+/config/db_connect.php
+
+# Logs / temp
+*.log
+/tmp/
+.cache/
+
+# Node (in case of future additions)
+/node_modules/

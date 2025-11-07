@@ -1,0 +1,17 @@
+# Deshabilitar el listado de directorios
+Options -Indexes
+
+# Proteger el archivo .htaccess
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Bloquear acceso a archivos sensibles
+<FilesMatch "(\.htaccess|\.htpasswd|\.ini|\.phar|\.bak|\.sh|composer\.json|composer\.lock|phpinfo\.php)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Configurar la página principal
+DirectoryIndex login_index.html

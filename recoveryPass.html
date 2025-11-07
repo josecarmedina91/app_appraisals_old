@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Recovery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      .btn-send {
+        background-color: #758121; /* Color del botón enviar */
+      }
+      .btn-send:hover {
+        background-color: #5a6118; /* Color al pasar el cursor sobre el botón */
+      }
+      /* Estilo personalizado para el botón cancelar */
+      .btn-cancel {
+        background-color: #d9534f; /* Color del botón cancelar */
+      }
+      .btn-cancel:hover {
+        background-color: #c9302c; /* Color al pasar el cursor sobre el botón */
+      }
+    </style>
+  </head>
+  <body class="bg-white flex flex-col justify-center items-center h-screen">
+    <div class="w-full max-w-xs">
+      <img src="img/logo.png" alt="Logo" class="mx-auto mb-5 max-w-xs" />
+
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+
+        <!-- Email Input para recuperación -->
+        <div class="mb-4">
+          <input
+            class="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="email-recovery"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- Botón para enviar solicitud de recuperación -->
+        <div class="mb-2">
+          <button
+            class="btn-send w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+        
+        <!-- Botón para cancelar -->
+        <div class="mt-2">
+          <button
+            class="btn-cancel w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+            onclick="window.location.href='login_index.html';"
+          >
+            Cancel
+          </button>
+        </div>
+
+        <p class="text-gray-600 text-xs text-center mt-6">
+            Please enter the email associated with your account, and we will send you a link to reset your password.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

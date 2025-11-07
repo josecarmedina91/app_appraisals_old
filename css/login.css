@@ -1,0 +1,15 @@
+/* Estilo personalizado para el botón */
+.btn-sign-in {
+  background-color: #758121;
+}
+
+.btn-sign-in:hover {
+  background-color: #5a6118;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  /* Tamaño de fuente similar a Tailwind text-sm */
+  margin-top: 0.5rem;
+}
