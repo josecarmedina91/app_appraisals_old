@@ -40,5 +40,12 @@ Para producción/entornos nuevos, instala dependencias con `composer install` y 
 - Rama principal: `main`.
 - Flujo estándar: PRs hacia `main`.
 
+## Instalación rápida
+Consulta la guía completa en `INSTALL.md`. Resumen:
+1. `composer install`
+2. Copia `config/db_connect.sample.php` a `config/db_connect.php` y pon tus credenciales.
+3. Crea directorios ignorados: `export_pdf/`, `export_cloud/`, `img/photo_gallery/` y asigna permisos.
+4. Levanta el servidor: `php -S localhost:8000` y abre `http://localhost:8000/login_index.html`.
+
 ## Notas
 - Si necesitas subir `vendor/` por alguna restricción del servidor, actualiza `.gitignore` y ten en cuenta el tamaño del repositorio.
